@@ -5,5 +5,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "El secreto ${{secrets.SECRET}}"
-      - run: echo "El variable ${{env.VAR}}"
+      - run: echo "El secreto ${{secrets}}"
+      - run: echo "El variable ${{env}}"
