@@ -1,3 +1,4 @@
+name: my-work-flow
 on:
   workflow_dispatch:
 jobs:
