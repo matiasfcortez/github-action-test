@@ -1,9 +1,9 @@
 on:
   workflow_dispatch:
-    jobs:
-      Explore-GitHub-Actions:
-        runs-on: ubuntu-latest
-        environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
-        steps:
-          - run: echo "El secreto ${{secrets.SECRET}}"
-          - run: echo "El variable ${{vars.VAR}}"
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+    steps:
+      - run: echo "El secreto ${{secrets.SECRET}}"
+      - run: echo "El variable ${{vars.VAR}}"
